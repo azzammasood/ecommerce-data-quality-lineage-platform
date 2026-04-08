@@ -1,0 +1,73 @@
+# ============================================================
+# SENSITIVE / PRIVATE — do NOT push to GitHub portfolio
+# ============================================================
+
+# Fake/mock data generation script (kept private — narrated as real data)
+scripts/generate_fake_data.py
+
+# Generated CSV data files
+data/
+*.csv
+*.json
+
+# Environment secrets
+.env
+.env.*
+*.env
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+test-venv/
+
+# ============================================================
+# DOCKER & RUNTIME
+# ============================================================
+docker-compose.override.yml
+*.log
+logs/
+plugins/
+
+# ============================================================
+# AIRFLOW
+# ============================================================
+airflow.db
+airflow.cfg
+webserver_config.py
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ============================================================
+# DBT
+# ============================================================
+dbt_ecommerce/target/
+dbt_ecommerce/dbt_packages/
+dbt_ecommerce/logs/
+dbt_ecommerce/.user.yml
+
+# ============================================================
+# TERRAFORM
+# ============================================================
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+
+# Downloaded binaries
+*.zip
+*.tar.gz
+
+# ============================================================
+# GENERAL
+# ============================================================
+.DS_Store
+*.swp
+*.swo
+config/
