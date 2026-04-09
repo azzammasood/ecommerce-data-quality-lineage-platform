@@ -1,5 +1,7 @@
 # E-Commerce Data Quality & Lineage Platform
 
+> ⭐ If this project helped you, consider giving it a star!
+
 I built this project to solve a problem every data team runs into — bad data makes it into your dashboards and nobody knows where it came from or how to fix it.
 
 This pipeline handles the full journey of e-commerce data: from raw orders landing in S3, through transformation and quality checks with dbt, all the way to a data catalog in Marquez that automatically tracks where every piece of data came from.
