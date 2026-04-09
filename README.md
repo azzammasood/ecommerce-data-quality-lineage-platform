@@ -160,3 +160,4 @@ You'll need AWS credentials configured locally. Everything used here stays withi
 **Why a custom Docker image instead of pip installs at startup?** — The original approach tried to install dbt and OpenLineage every time Airflow started, which caused dependency conflicts and timeouts. Baking everything into `Dockerfile.airflow` means the image is slow to build once, but starts instantly every time after that.
 
 **Why dbt-ol instead of native dbt?** — `dbt-ol` is the OpenLineage wrapper for dbt. It runs `dbt` underneath but emits lineage events to Marquez at the end of every run. No changes needed in the dbt models themselves.
+Update for project structure reorganization
